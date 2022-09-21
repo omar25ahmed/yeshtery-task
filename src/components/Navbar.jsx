@@ -7,8 +7,8 @@ const navbar = () => (
   <nav>
     <div className="first-nav container d-flex">
       <div className="logo">
-        <img src="images/hamburger.png" alt="hamburger" />
-        <img src="/images/yeshtery-logo.png" alt="logo" />
+        <img src="images/hamburger.png" alt="hamburger" className="nav-img" />
+        <img src="/images/yeshtery-logo.png" alt="logo" className="nav-img" />
       </div>
       <div>
         <p>
@@ -21,15 +21,15 @@ const navbar = () => (
       </div>
       <div className="d-flex">
         <div>
-          <img src="/images/contact.png" alt="phone" />
+          <img src="/images/contact.png" alt="phone" className="nav-img" />
           <span>Contact Us</span>
         </div>
         <div>
-          <img src="/images/track.png" alt="phone" />
+          <img src="/images/track.png" alt="phone" className="nav-img" />
           <span>Track Order</span>
         </div>
         <div>
-          <img src="/images/find.png" alt="phone" />
+          <img src="/images/find.png" alt="phone" className="nav-img" />
           <span>Find A Store</span>
         </div>
       </div>
