@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Product from './pages/Product';
 
 export default class App extends Component {
   constructor(props) {
@@ -9,15 +11,13 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <Router>
         <Navbar />
-        <div className="dummy">
-          lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.
-        </div>
-      </div>
+        <Routes>
+          <Route path="/" element={<Product />} />
+          <Route path="/product/:id" element={<Product />} />
+        </Routes>
+      </Router>
     );
   }
 }
