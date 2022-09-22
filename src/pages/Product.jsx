@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProductDetails from '../components/ProductDetails';
-import { getProducts } from '../services/getProducts';
+import getProducts from '../services/getProducts';
 import './Product.scss';
 
 export default class Product extends Component {
@@ -16,7 +16,6 @@ export default class Product extends Component {
   }
 
   render() {
-    // const { productId } = this.state;
     const { data } = this.state;
     return (
       <ProductDetails data={data} />
