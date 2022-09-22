@@ -1,19 +1,21 @@
 .similar-products {
   h1 {
     font-size: 28px;
-    color: #542E90;
-    font-family: 'Montserrat';
+    color: #542e90;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
   }
+
   .card-img-top {
     border: 7px solid white;
     border-radius: 6%;
   }
+
   .pricing {
     font-size: 1.5em;
     color: #7151a1;
-
   }
+
   .currency {
     font-size: 0.7em;
   }
