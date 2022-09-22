@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProductDetails from '../components/ProductDetails';
-import { http } from '../services/http';
+import { getProducts } from '../services/getProducts';
 import './Product.scss';
 
 export default class Product extends Component {
@@ -12,7 +12,7 @@ export default class Product extends Component {
   }
 
   async componentDidMount() {
-    this.setState({ data: await http() });
+    this.setState({ data: await getProducts() });
   }
 
   render() {

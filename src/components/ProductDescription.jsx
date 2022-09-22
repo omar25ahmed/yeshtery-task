@@ -21,7 +21,7 @@ export default class ProductDetails extends Component {
         </div>
         <div className="info">
           <h1 className="fw-bold">{product.title}</h1>
-          <p className="text-secondary text-capitalize mb-3">{product.category}</p>
+          <p className="text-secondary text-capitalize mb-1">{product.category}</p>
           <div className="rating d-flex align-items-center mb-3">
             <img src={`/images/rating/${Math.floor(product.rating)}-stars.png`} alt="rating" />
             <span className="fw-bold mx-4">
@@ -31,7 +31,7 @@ export default class ProductDetails extends Component {
             </span>
             <span className="fw-bold mx-4 text-secondary">22 ratings</span>
           </div>
-          <div className="cost d-flex justify-content-between align-items-center mb-3">
+          <div className="cost d-flex justify-content-between align-items-center mb-2">
             <div className="pricing fw-bold ">
               {product.price}
               {' '}
@@ -45,9 +45,9 @@ export default class ProductDetails extends Component {
               % Off
             </span>
           </div>
-          <div className="size my-5">
+          <div className="size my-4">
             <h3 className="fw-bold">Size</h3>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-start gap-2">
               <div className="size-box fw-bold">Small</div>
               <div className="size-box fw-bold">Medium</div>
               <div className="size-box fw-bold selected-size">Large</div>
@@ -55,14 +55,14 @@ export default class ProductDetails extends Component {
               <div className="size-box fw-bold">XX Large</div>
             </div>
           </div>
-          <div className="color my-3">
+          <div className="color my-2">
             <h3 className="fw-bold">Color</h3>
             <div className="d-flex justify-content-start align-items-center gap-3">
               <div className="color-box-yellow" />
               <div className="color-box-blue" />
             </div>
           </div>
-          <div className="quantity my-3">
+          <div className="quantity my-2">
             <h3 className="fw-bold">Quantity</h3>
             <div className="d-flex justify-content-start align-items-center gap-3">
               <button type="button" className="btn btn-light fw-bold btn-">-</button>
