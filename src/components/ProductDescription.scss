@@ -9,13 +9,16 @@
   .cost {
     width: 400px;
     font-size: 1.2em;
+
     .pricing {
       font-size: 1.5em;
       color: #7151a1;
+
       .currency {
         font-size: 0.7em;
       }
     }
+
     .sale {
       background-color: #fdee3c;
       font-size: 1.2em;
@@ -36,6 +39,7 @@
       padding-top: 2em;
       color: #542e90;
     }
+
     .selected-size {
       background-color: #ececec;
       color: #1d1d1b;
@@ -54,6 +58,7 @@
       padding-top: 2em;
       background-color: #fdee3c;
     }
+
     .color-box-blue {
       width: 70px;
       height: 70px;
