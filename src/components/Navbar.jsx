@@ -1,19 +1,33 @@
 import './navbar.scss';
 import React, { Component } from 'react';
+import Cart from '../pages/Cart';
 
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      show: false,
+    };
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
   }
 
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
+  };
+
   render() {
+    const { show } = this.state;
     return (
       <nav>
         <div className="first-nav">
           <div className="container d-flex justify-content-between w-75 pt-2 align-items-center">
             <div className="logo">
-              <img src="images/hamburger.png" alt="hamburger" className="nav-img" />
+              <span className="hamburger h4">&#9776;</span>
               <img src="/images/yeshtery-logo.png" alt="logo" className="nav-img" />
             </div>
             <div>
@@ -62,9 +76,9 @@ export default class Navbar extends Component {
             <div className="d-flex gap-2">
               <p className="cart">0</p>
               <img src="/images/Path 772.svg" alt="user" className="nav-img" />
-              <span className="fw-bold" role="button">
+              <button type="button" className="bg-transparent border-0" onClick={this.showModal}>
                 Cart
-              </span>
+              </button>
             </div>
             <div className="d-flex gap-2">
               <img src="/images/Path 771.svg" alt="user" className="nav-img" />
@@ -107,17 +121,25 @@ export default class Navbar extends Component {
         </div>
         <div className="fourth-nav">
           <div className="container d-flex justify-content-start align-items-center">
-            <span className="text-decoration-underline me-2" role="button">Men</span>
+            <span className="text-decoration-underline me-2" role="button">
+              Men
+            </span>
             /
-            <span className="text-decoration-underline mx-2" role="button">Clothing</span>
+            <span className="text-decoration-underline mx-2" role="button">
+              Clothing
+            </span>
             /
-            <span className="text-decoration-underline mx-2" role="button">Tops</span>
+            <span className="text-decoration-underline mx-2" role="button">
+              Tops
+            </span>
             /
-            <span className="text-decoration-underline mx-2" role="button">Addidas</span>
-            /
-            Addidas Black T-Shirt
+            <span className="text-decoration-underline mx-2" role="button">
+              Addidas
+            </span>
+            / Addidas Black T-Shirt
           </div>
         </div>
+        <Cart show={show} handleClose={this.hideModal} />
       </nav>
     );
   }

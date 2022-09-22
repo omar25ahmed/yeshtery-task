@@ -39,6 +39,8 @@ export default class ProductDetails extends Component {
             </div>
             <span className="fw-bold text-secondary text-decoration-line-through ">
               {Math.floor((product.price * 100) / (100 - product.discountPercentage))}
+              {' '}
+              LE
             </span>
             <span className="fw-bold  sale">
               {product.discountPercentage}
