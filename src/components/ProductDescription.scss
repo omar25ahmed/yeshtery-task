@@ -1,0 +1,122 @@
+.description {
+  .rating {
+    img {
+      height: 30px;
+      width: 120px;
+    }
+  }
+
+  .cost {
+    width: 400px;
+    font-size: 1.2em;
+    .pricing {
+      font-size: 1.5em;
+      color: #7151a1;
+      .currency {
+        font-size: 0.7em;
+      }
+    }
+    .sale {
+      background-color: #fdee3c;
+      font-size: 1.2em;
+      padding: 0.5em;
+    }
+  }
+
+  .size {
+    .size-box {
+      font-size: 10px;
+      width: 70px;
+      height: 70px;
+      border: 1px solid lightgrey;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      padding: 1em;
+      padding-top: 2em;
+      color: #542e90;
+    }
+    .selected-size {
+      background-color: #ececec;
+      color: #1d1d1b;
+    }
+  }
+
+  .color {
+    .color-box-yellow {
+      width: 70px;
+      height: 70px;
+      border: 1px solid lightgrey;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      padding: 1em;
+      padding-top: 2em;
+      background-color: #fdee3c;
+    }
+    .color-box-blue {
+      width: 70px;
+      height: 70px;
+      border: 1px solid lightgrey;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      padding: 1em;
+      padding-top: 2em;
+      background-color: blue;
+    }
+  }
+
+  .quantity {
+    button {
+      border-radius: 50%;
+      background-color: #fdee3c;
+    }
+
+    span {
+      width: 252px;
+      height: 48px;
+      background-color: #f5f5f5;
+      border-radius: 50px;
+      border: 1px solid #d9d9d9;
+      text-align: center;
+      padding-top: 0.5em;
+    }
+
+    .btn- {
+      width: 37px;
+      height: 37px;
+      position: absolute;
+      transform: translate(6%, 0);
+    }
+
+    .btn-plus {
+      width: 37px;
+      height: 37px;
+      position: absolute;
+      transform: translate(564%, 0);
+    }
+  }
+
+  .actions {
+    .add-cart,
+    .pick-up {
+      width: 250px;
+      height: 50px;
+      border-radius: 50px;
+      border: none;
+      font-size: 1.2em;
+      margin-top: 1em;
+    }
+
+    .pick-up {
+      background-color: #fff200;
+      color: #000;
+    }
+
+    .add-cart {
+      background-color: #542e90;
+      color: #fff;
+    }
+  }
+}
