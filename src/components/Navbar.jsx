@@ -27,7 +27,7 @@ export default class Navbar extends Component {
         <div className="first-nav">
           <div className="container d-flex justify-content-between w-75 pt-2 align-items-center">
             <div className="logo">
-              <span className="hamburger h4">&#9776;</span>
+              <img src="/images/hamburger.png" alt="hamburger" className="nav-img" />
               <img src="/images/yeshtery-logo.png" alt="logo" className="nav-img" />
             </div>
             <div>
