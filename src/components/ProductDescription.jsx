@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import CartProductsContext from '../services/context';
 import './ProductDescription.scss';
 
 export default class ProductDetails extends Component {
@@ -9,6 +10,7 @@ export default class ProductDetails extends Component {
   }
 
   render() {
+    const { addProduct } = this.context;
     const { data } = this.props;
     const product = data[0];
     if (!product) {
@@ -73,7 +75,7 @@ export default class ProductDetails extends Component {
             </div>
           </div>
           <div className="actions d-flex align-items-center gap-5">
-            <button type="button" className="add-cart fw-bold">Add to Cart</button>
+            <button type="button" onClick={() => addProduct(product)} className="add-cart fw-bold">Add to Cart</button>
             <button type="button" className="pick-up fw-bold">Pick up from store</button>
           </div>
         </div>
@@ -81,6 +83,8 @@ export default class ProductDetails extends Component {
     );
   }
 }
+
+ProductDetails.contextType = CartProductsContext;
 
 ProductDetails.propTypes = {
   data: PropTypes.shape([]).isRequired,
