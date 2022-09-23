@@ -1,0 +1,42 @@
+.similar-products {
+  h1 {
+    font-size: 28px;
+    color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .card-img-top {
+    border: 7px solid white;
+    border-radius: 6%;
+  }
+
+  .pricing {
+    font-size: 1.5em;
+    color: #7151a1;
+  }
+
+  .currency {
+    font-size: 0.7em;
+  }
+
+  .sale {
+    background-color: #fdee3c;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-left: 10px;
+  }
+
+  .brand-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .rating {
+    height: 24px;
+  }
+}
