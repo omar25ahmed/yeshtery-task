@@ -1,6 +1,6 @@
 import './navbar.scss';
 import React, { Component } from 'react';
-import Cart from '../pages/Cart';
+import Cart from './Cart';
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -134,9 +134,9 @@ export default class Navbar extends Component {
             </span>
             /
             <span className="text-decoration-underline mx-2" role="button">
-              Addidas
+              Adidas
             </span>
-            / Addidas Black T-Shirt
+            / Adidas Black T-Shirt
           </div>
         </div>
         <Cart show={show} handleClose={this.hideModal} />
