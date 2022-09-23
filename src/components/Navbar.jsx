@@ -1,6 +1,7 @@
 import './navbar.scss';
 import React, { Component } from 'react';
-import Cart from '../pages/Cart';
+import Cart from './Cart';
+import CartProductsContext from '../services/context';
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ export default class Navbar extends Component {
 
   render() {
     const { show } = this.state;
+    const { products } = this.context;
     return (
       <nav>
         <div className="first-nav">
@@ -74,7 +76,7 @@ export default class Navbar extends Component {
           </div>
           <div className="d-flex gap-4 align-items-center">
             <div className="d-flex gap-2">
-              <p className="cart">0</p>
+              <p className="cart">{products.length}</p>
               <img src="/images/Path 772.svg" alt="user" className="nav-img" />
               <button type="button" className="bg-transparent border-0" onClick={this.showModal}>
                 Cart
@@ -134,9 +136,9 @@ export default class Navbar extends Component {
             </span>
             /
             <span className="text-decoration-underline mx-2" role="button">
-              Addidas
+              Adidas
             </span>
-            / Addidas Black T-Shirt
+            / Adidas Black T-Shirt
           </div>
         </div>
         <Cart show={show} handleClose={this.hideModal} />
@@ -144,3 +146,5 @@ export default class Navbar extends Component {
     );
   }
 }
+
+Navbar.contextType = CartProductsContext;

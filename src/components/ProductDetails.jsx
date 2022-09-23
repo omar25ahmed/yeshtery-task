@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ProductCarousel from './ProductCarousel';
 import ProductDescription from './ProductDescription';
 import SimilarProducts from './SimilarProducts';
+import Cart from './Cart';
 
 export default class ProductDetails extends Component {
   constructor(props) {
@@ -27,6 +28,9 @@ export default class ProductDetails extends Component {
           </div>
         </div>
         <SimilarProducts data={similarProduct} />
+        <Cart>
+          Hello
+        </Cart>
       </>
     );
   }
