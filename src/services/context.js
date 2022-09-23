@@ -19,7 +19,7 @@ export class ProductProvider extends React.Component {
 
   removeProduct = (product, i) => {
     this.setState((prevState) => ({
-      products: prevState.products.filter((p, id) => id !== i),
+      products: prevState.products.filter((_p, id) => id !== i),
     }));
   }
 
