@@ -37,7 +37,7 @@
       text-align: center;
       padding: 1em;
       padding-top: 2em;
-      color: #542e90;
+      color: var(--secondary-color);
     }
 
     .selected-size {
@@ -115,12 +115,12 @@
     }
 
     .pick-up {
-      background-color: #fff200;
+      background-color: var(--primary-color);
       color: #000;
     }
 
     .add-cart {
-      background-color: #542e90;
+      background-color: var(--secondary-color);
       color: #fff;
     }
   }
