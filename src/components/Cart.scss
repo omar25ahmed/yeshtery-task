@@ -20,7 +20,7 @@
     border: 0;
     border-radius: 50px;
     font-size: 1.2em;
-    background-color: #fff200;
+    background-color: var(--primary-color);
     color: #000;
   }
 
@@ -36,19 +36,19 @@
     }
 
     .pick-up {
-      background-color: #fff200;
+      background-color: var(--primary-color);
       color: #000;
     }
 
     .add-cart {
-      background-color: #542e90;
+      background-color: var(--secondary-color);
       color: #fff;
     }
   }
 
   h1 {
     font-size: 28px;
-    color: #542e90;
+    color: var(--secondary-color);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
   }
