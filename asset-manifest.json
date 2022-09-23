@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/yeshtery-task/static/css/main.8d95e5c9.css",
+    "main.js": "/yeshtery-task/static/js/main.d8b4e1dc.js",
+    "static/css/553.18820964.chunk.css": "/yeshtery-task/static/css/553.18820964.chunk.css",
+    "static/js/553.0de346c9.chunk.js": "/yeshtery-task/static/js/553.0de346c9.chunk.js",
+    "static/js/787.38b984e0.chunk.js": "/yeshtery-task/static/js/787.38b984e0.chunk.js",
+    "static/js/482.a0929001.chunk.js": "/yeshtery-task/static/js/482.a0929001.chunk.js",
+    "index.html": "/yeshtery-task/index.html",
+    "static/media/send-email.svg": "/yeshtery-task/static/media/send-email.54305e6eb095364d05d9.svg",
+    "static/media/Path-774.svg": "/yeshtery-task/static/media/Path-774.542c6e40fd1bb4c5f72f.svg",
+    "main.8d95e5c9.css.map": "/yeshtery-task/static/css/main.8d95e5c9.css.map",
+    "main.d8b4e1dc.js.map": "/yeshtery-task/static/js/main.d8b4e1dc.js.map",
+    "553.18820964.chunk.css.map": "/yeshtery-task/static/css/553.18820964.chunk.css.map",
+    "553.0de346c9.chunk.js.map": "/yeshtery-task/static/js/553.0de346c9.chunk.js.map",
+    "787.38b984e0.chunk.js.map": "/yeshtery-task/static/js/787.38b984e0.chunk.js.map",
+    "482.a0929001.chunk.js.map": "/yeshtery-task/static/js/482.a0929001.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d95e5c9.css",
+    "static/js/main.d8b4e1dc.js"
+  ]
+}
