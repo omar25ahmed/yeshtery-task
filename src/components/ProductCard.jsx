@@ -1,8 +1,4 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
-// import { Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './SimilarProducts.scss';
 
@@ -10,7 +6,6 @@ export default class ProductCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // redirect: false,
     };
   }
 
@@ -24,16 +19,15 @@ export default class ProductCard extends Component {
         className="card shadow-sm"
         style={{ width: '18rem' }}
         key={product.id}
-        onClick={this.handleClick}
       >
         <img
-          src={`/images/${product.imgFolder}/1.jpg`}
+          src={`./images/${product.imgFolder}/1.jpg`}
           className="card-img-top"
           style={{ height: '300px' }}
           alt="..."
         />
         <div className="card-body">
-          <a href={`/product/${product.imgFolder}`} className="card-title h3 text-decoration-none text-dark">{product.title}</a>
+          <a href={`./#/product/${product.imgFolder}`} className="card-title h3 text-decoration-none text-dark">{product.title}</a>
           <div className="card-info d-flex justify-content-between align-items-center">
             <div>
               <div className="pricing fw-bold ">
@@ -51,10 +45,10 @@ export default class ProductCard extends Component {
                 % Off
               </span>
             </div>
-            <img src="/images/Group 745.svg" className="brand-logo" alt="product" />
+            <img src="./images/Group 745.svg" className="brand-logo" alt="product" />
           </div>
           <div className="d-flex justify-content-center align-items-center gap-2 mt-4">
-            <img src={`/images/rating/${Math.floor(product.rating)}-stars.png`} alt="rating" className="rating" />
+            <img src={`./images/rating/${Math.floor(product.rating)}-stars.png`} alt="rating" className="rating" />
             <p className="fw-bold">
               {product.rating}
               {' '}

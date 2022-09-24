@@ -15,8 +15,8 @@ export default class ProductDetails extends Component {
   render() {
     const { data } = this.props;
     const modifiedData = data.map((product, idx) => ({ ...product, imgFolder: idx + 1 }));
-    const selectedProduct = modifiedData.filter((_product, idx) => idx + 1 === parseInt(window.location.href.split('/')[4], 10));
-    const similarProduct = modifiedData.filter((_product, idx) => idx + 1 !== parseInt(window.location.href.split('/')[4], 10));
+    const selectedProduct = modifiedData.filter((_product, idx) => idx + 1 === parseInt(window.location.href.split('/').pop(), 10));
+    const similarProduct = modifiedData.filter((_product, idx) => idx + 1 !== parseInt(window.location.href.split('/').pop(), 10));
     return (
       <>
         <div className="d-flex justify-content-center product container my-5">

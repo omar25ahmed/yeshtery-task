@@ -16,10 +16,10 @@ export default class Cart extends Component {
     const showHideClassName = show ? 'modal display-block' : 'modal display-none';
     const cartProducts = () => (
       <div className="cart-products">
-        {products.map((product, idx) => (
-          <div className="d-flex justify-content-start border p-2 my-2" key={product.id}>
+        {products.map((product) => (
+          <div className="d-flex justify-content-start border p-2 my-2" key={Math.random(10000)}>
             <div className="cart-img w-25">
-              <img className="cart-img" src={`/images/${product.imgFolder}/1.jpg`} alt="product" />
+              <img className="cart-img" src={`./images/${product.imgFolder}/1.jpg`} alt="product" />
             </div>
             <div className="cart-info w-75">
               <h5>{product.title}</h5>
@@ -32,7 +32,7 @@ export default class Cart extends Component {
                     <span className="currency">LE</span>
                   </div>
                 </div>
-                <button className="remove px-4 py-3" onClick={() => removeProduct(product, idx)} type="button">Remove</button>
+                <button className="remove px-4 py-3" onClick={() => removeProduct(product, product.cartProductId)} type="button">Remove</button>
               </div>
             </div>
           </div>

@@ -13,15 +13,16 @@ export class ProductProvider extends React.Component {
 
   addProduct = (product) => {
     this.setState((prevState) => ({
-      products: [...prevState.products, product],
+      products: [...prevState.products,
+        { ...product, cartProductId: Math.random(1000000) }],
     }));
-  }
+  };
 
   removeProduct = (product, i) => {
     this.setState((prevState) => ({
-      products: prevState.products.filter((_p, id) => id !== i),
+      products: prevState.products.filter((p) => p.cartProductId !== i),
     }));
-  }
+  };
 
   render() {
     const { children } = this.props;
@@ -39,8 +40,5 @@ export class ProductProvider extends React.Component {
 export default CartProductsContext;
 
 ProductProvider.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };

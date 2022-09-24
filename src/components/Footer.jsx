@@ -12,7 +12,7 @@ export default class Footer extends Component {
       <footer className="pb-3">
         <div className="container d-flex w-100 footer">
           <div className="footer-left">
-            <img src="/images/footer-logo.svg" alt="footer-logo" className="mb-4" />
+            <img src="./images/footer-logo.svg" alt="footer-logo" className="mb-4" />
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
               diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -50,19 +50,19 @@ export default class Footer extends Component {
               </div>
               <div className="social">
                 <div className="d-flex gap-2 mb-3 align-items-center">
-                  <img src="/images/facebook.svg" alt="facebook" className="social-img" />
+                  <img src="./images/facebook.svg" alt="facebook" className="social-img" />
                   <p>/YESHTERY</p>
                 </div>
                 <div className="d-flex gap-2 mb-3 align-items-center">
-                  <img src="/images/linkedin.svg" alt="linkedin" className="social-img" />
+                  <img src="./images/linkedin.svg" alt="linkedin" className="social-img" />
                   <p>/YESHTERY</p>
                 </div>
                 <div className="d-flex gap-2 mb-3 align-items-center">
-                  <img src="/images/instagram.svg" alt="instagram" className="social-img" />
+                  <img src="./images/instagram.svg" alt="instagram" className="social-img" />
                   <p>/YESHTERY</p>
                 </div>
                 <div className="d-flex gap-2 align-items-center">
-                  <img src="/images/twitter.svg" alt="twitter" className="social-img" />
+                  <img src="./images/twitter.svg" alt="twitter" className="social-img" />
                   <p>/YESHTERY</p>
                 </div>
               </div>
@@ -72,13 +72,13 @@ export default class Footer extends Component {
         <div className="d-flex justify-content-between container align-items-center">
           <p>© 2021 Yeshtery. All Rights Reserved</p>
           <div className="d-flex gap-3">
-            <img src="/images/cash.png" alt="Cash" className="card" />
-            <img src="/images/visa.png" alt="Visa" className="card" />
-            <img src="/images/mastercard.png" alt="Mastercard" className="card" />
+            <img src="./images/cash.png" alt="Cash" className="card" />
+            <img src="./images/visa.png" alt="Visa" className="card" />
+            <img src="./images/mastercard.png" alt="Mastercard" className="card" />
           </div>
           <div className="d-flex gap-2 align-items-center">
             <p>Powered by</p>
-            <img src="/images/nasnav.svg" alt="nasnav" className="nasnav" />
+            <img src="./images/nasnav.svg" alt="nasnav" className="nasnav" />
           </div>
         </div>
       </footer>

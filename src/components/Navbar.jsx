@@ -29,8 +29,8 @@ export default class Navbar extends Component {
         <div className="first-nav">
           <div className="container d-flex justify-content-between w-75 pt-2 align-items-center">
             <div className="logo">
-              <img src="/images/hamburger.png" alt="hamburger" className="nav-img" />
-              <img src="/images/yeshtery-logo.png" alt="logo" className="nav-img" />
+              <img src="./images/hamburger.png" alt="hamburger" className="nav-img" />
+              <img src="./images/yeshtery-logo.png" alt="logo" className="nav-img" />
             </div>
             <div>
               <p className="m-0">
@@ -47,19 +47,19 @@ export default class Navbar extends Component {
             </div>
             <div className="d-flex gap-4">
               <div>
-                <img src="/images/contact.png" alt="phone" className="nav-img" />
+                <img src="./images/contact.png" alt="phone" className="nav-img" />
                 <span className="fw-bold" role="button">
                   Contact Us
                 </span>
               </div>
               <div>
-                <img src="/images/track.png" alt="phone" className="nav-img" />
+                <img src="./images/track.png" alt="phone" className="nav-img" />
                 <span className="fw-bold" role="button">
                   Track Order
                 </span>
               </div>
               <div>
-                <img src="/images/find.png" alt="phone" className="nav-img" />
+                <img src="./images/find.png" alt="phone" className="nav-img" />
                 <span className="fw-bold" role="button">
                   Find A Store
                 </span>
@@ -72,24 +72,24 @@ export default class Navbar extends Component {
             <input type="text" placeholder="Search" className="search" />
           </div>
           <div>
-            <img src="/images/Group 745.svg" alt="cart" className="brand-img" />
+            <img src="./images/Group 745.svg" alt="cart" className="brand-img" />
           </div>
           <div className="d-flex gap-4 align-items-center">
             <div className="d-flex gap-2">
               <p className="cart">{products.length}</p>
-              <img src="/images/Path 772.svg" alt="user" className="nav-img" />
+              <img src="./images/Path 772.svg" alt="user" className="nav-img" />
               <button type="button" className="bg-transparent border-0" onClick={this.showModal}>
                 Cart
               </button>
             </div>
             <div className="d-flex gap-2">
-              <img src="/images/Path 771.svg" alt="user" className="nav-img" />
+              <img src="./images/Path 771.svg" alt="user" className="nav-img" />
               <span className="fw-bold" role="button">
                 Wishlist
               </span>
             </div>
             <div className="d-flex gap-2">
-              <img src="/images/Path 773.svg" alt="user" className="nav-img" />
+              <img src="./images/Path 773.svg" alt="user" className="nav-img" />
               <span className="fw-bold" role="button">
                 Login
               </span>

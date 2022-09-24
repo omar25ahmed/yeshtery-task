@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router, Routes, Route, Navigate,
+  Outlet, Routes, Route, Navigate,
 } from 'react-router-dom';
 import ClipLoader from 'react-spinners/ClipLoader';
 import Navbar from './components/Navbar';
@@ -23,21 +23,26 @@ const override = {
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = [...Array(5).keys()];
   }
 
   render() {
+    const { state } = this;
     return (
       <React.Suspense fallback={<ClipLoader cssOverride={override} />}>
         <ProductProvider>
-          <Router>
-            <Navbar />
-            <Routes>
-              <Route path="*" element={<Navigate to="/product/1" />} />
-              <Route path="/product/:id" element={<Product />} />
-            </Routes>
-            <Footer />
-          </Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Navigate to="/product/1" />} />
+            <Route path="/" element={<Outlet />}>
+              {
+                state.map((i) => (
+                  <Route key={i} path={`product/${i + 1}`} element={<Product />} />
+                ))
+              }
+            </Route>
+          </Routes>
+          <Footer />
         </ProductProvider>
       </React.Suspense>
     );

@@ -123,5 +123,10 @@
       background-color: var(--secondary-color);
       color: #fff;
     }
+
+    .add-cart:disabled {
+      background-color: #d9d9d9;
+      color: #000;
+    }
   }
 }

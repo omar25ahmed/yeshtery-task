@@ -19,13 +19,13 @@ export default class ProductDetails extends Component {
     return (
       <div className="description">
         <div className="mb-3">
-          <img src="/images/Group 745.svg" alt="product" />
+          <img src="./images/Group 745.svg" alt="product" />
         </div>
         <div className="info">
           <h1 className="fw-bold">{product.title}</h1>
           <p className="text-secondary text-capitalize mb-1">{product.category}</p>
           <div className="rating d-flex align-items-center mb-3">
-            <img src={`/images/rating/${Math.floor(product.rating)}-stars.png`} alt="rating" />
+            <img src={`./images/rating/${Math.floor(product.rating)}-stars.png`} alt="rating" />
             <span className="fw-bold mx-4">
               {product.rating}
               {' '}
