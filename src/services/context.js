@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CartProductsContext = React.createContext();
 
@@ -16,12 +18,14 @@ export class ProductProvider extends React.Component {
       products: [...prevState.products,
         { ...product, cartProductId: Math.random(1000000) }],
     }));
+    toast.success('Product added to cart');
   };
 
   removeProduct = (product, i) => {
     this.setState((prevState) => ({
       products: prevState.products.filter((p) => p.cartProductId !== i),
     }));
+    toast.error('Product removed from cart');
   };
 
   render() {
