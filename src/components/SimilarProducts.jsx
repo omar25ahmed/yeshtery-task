@@ -22,7 +22,7 @@ export default class SimilarProducts extends Component {
           <h1>Similar Products</h1>
           <p>You may like these products also</p>
         </div>
-        <div className="d-flex justify-content-center gap-5 container my-5">
+        <div className="d-flex flex-column flex-md-row align-items-center justify-content-center gap-5 container my-5">
           {data.map((product) => (<ProductCard product={product} key={product.id} />))}
         </div>
       </div>

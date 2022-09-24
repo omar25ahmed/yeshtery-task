@@ -10,7 +10,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer className="pb-3">
-        <div className="container d-flex w-100 footer">
+        <div className="container flex-column flex-lg-row d-flex w-100 footer gap-5 gap-md-0">
           <div className="footer-left">
             <img src="./images/footer-logo.svg" alt="footer-logo" className="mb-4" />
             <p>
@@ -32,14 +32,14 @@ export default class Footer extends Component {
               quis
             </p>
           </div>
-          <div className="d-flex flex-column footer-right">
+          <div className="d-flex flex-column justify-content-center align-items-center align-items-lg-stretch footer-right">
             <p className="mb-2 subscribe">Subscribe to our newsletter</p>
             <div className="d-flex flex-column">
               <input type="text" placeholder="Enter Your Mail" className="search" />
-              <input type="button" className="button" value="Subscribe" />
+              <input type="button" className="button d-none d-lg-block" value="Subscribe" />
             </div>
-            <div className="d-flex w-100">
-              <div className="w-50 d-flex flex-column align-items-start">
+            <div className="d-flex w-100 flex-column flex-lg-row">
+              <div className="w-50 d-flex flex-column align-items-center align-items-lg-start company-info">
                 <button type="button" className="bg-transparent border-0 text-light fw-bold mb-3 mt-4">About Us</button>
                 <button type="button" className="bg-transparent border-0 text-light fw-bold mb-3">Contact Us</button>
                 <button type="button" className="bg-transparent border-0 text-light fw-bold mb-3">Track Order</button>
@@ -69,14 +69,14 @@ export default class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-between container align-items-center">
-          <p>© 2021 Yeshtery. All Rights Reserved</p>
-          <div className="d-flex gap-3">
+        <div className="d-flex flex-column flex-lg-row justify-content-between container align-items-center">
+          <p className="my-1">© 2021 Yeshtery. All Rights Reserved</p>
+          <div className="d-flex my-1 gap-3">
             <img src="./images/cash.png" alt="Cash" className="card" />
             <img src="./images/visa.png" alt="Visa" className="card" />
             <img src="./images/mastercard.png" alt="Mastercard" className="card" />
           </div>
-          <div className="d-flex gap-2 align-items-center">
+          <div className="d-flex my-1 gap-2 align-items-center">
             <p>Powered by</p>
             <img src="./images/nasnav.svg" alt="nasnav" className="nasnav" />
           </div>

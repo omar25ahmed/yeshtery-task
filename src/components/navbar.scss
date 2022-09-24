@@ -28,7 +28,6 @@ nav {
   }
 
   .second-nav {
-    height: 84px;
     font-family: 'Montserrat', sans-serif;
 
     .brand-img {
@@ -76,11 +75,22 @@ nav {
   }
 
   .fourth-nav {
+    border-top: 1px solid #d8d8d8;
     border-bottom: 1px solid #d8d8d8;
 
     .container {
       height: 48px;
       font-size: 17px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    .fourth-nav {
+      .container {
+        font-size: 14px;
+      }
     }
   }
 }
