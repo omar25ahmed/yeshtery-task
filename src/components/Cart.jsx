@@ -59,7 +59,7 @@ export default class Cart extends Component {
     );
     return (
       <div className={`${showHideClassName}`}>
-        <section className="modal-main">
+        <section className="modal-main overflow-auto">
           <button className="bg-transparent border-0 h1 exit" type="button" onClick={handleClose}>
             &times;
           </button>

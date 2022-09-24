@@ -27,12 +27,12 @@ export default class Navbar extends Component {
     return (
       <nav>
         <div className="first-nav">
-          <div className="container d-flex justify-content-between w-75 pt-2 align-items-center">
+          <div className="container-lg d-flex justify-content-between pt-2 align-items-center">
             <div className="logo">
               <img src="./images/hamburger.png" alt="hamburger" className="nav-img" />
               <img src="./images/yeshtery-logo.png" alt="logo" className="nav-img" />
             </div>
-            <div>
+            <div className="d-none d-lg-block">
               <p className="m-0">
                 <span className="symbol">&lt;</span>
                 {' '}
@@ -48,33 +48,33 @@ export default class Navbar extends Component {
             <div className="d-flex gap-4">
               <div>
                 <img src="./images/contact.png" alt="phone" className="nav-img" />
-                <span className="fw-bold" role="button">
+                <span className="fw-bold d-none d-lg-inline" role="button">
                   Contact Us
                 </span>
               </div>
               <div>
                 <img src="./images/track.png" alt="phone" className="nav-img" />
-                <span className="fw-bold" role="button">
+                <span className="fw-bold d-none d-lg-inline" role="button">
                   Track Order
                 </span>
               </div>
               <div>
                 <img src="./images/find.png" alt="phone" className="nav-img" />
-                <span className="fw-bold" role="button">
+                <span className="fw-bold d-none d-lg-inline" role="button">
                   Find A Store
                 </span>
               </div>
             </div>
           </div>
         </div>
-        <div className="second-nav container d-flex justify-content-between align-items-center">
-          <div>
+        <div className="second-nav container d-flex flex-column flex-lg-row justify-content-between align-items-center py-3">
+          <div className="my-1">
             <input type="text" placeholder="Search" className="search" />
           </div>
-          <div>
+          <div className="my-2">
             <img src="./images/Group 745.svg" alt="cart" className="brand-img" />
           </div>
-          <div className="d-flex gap-4 align-items-center">
+          <div className="d-flex gap-4 align-items-center my-1">
             <div className="d-flex gap-2">
               <p className="cart">{products.length}</p>
               <img src="./images/Path 772.svg" alt="user" className="nav-img" />
@@ -96,7 +96,7 @@ export default class Navbar extends Component {
             </div>
           </div>
         </div>
-        <div className="third-nav bg-dark">
+        <div className="third-nav bg-dark d-none d-lg-block">
           <div className="container d-flex justify-content-between align-items-center">
             <button type="button" className="text-light border-0 bg-transparent fw-bold">
               Men

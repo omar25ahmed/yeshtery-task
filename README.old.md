@@ -1,1 +1,0 @@
-# yeshtery-task

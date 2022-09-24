@@ -3,6 +3,7 @@ import {
   Outlet, Routes, Route, Navigate,
 } from 'react-router-dom';
 import ClipLoader from 'react-spinners/ClipLoader';
+import { ToastContainer } from 'react-toastify';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { ProductProvider } from './services/context';
@@ -31,6 +32,7 @@ export default class App extends Component {
     return (
       <React.Suspense fallback={<ClipLoader cssOverride={override} />}>
         <ProductProvider>
+          <ToastContainer />
           <Navbar />
           <Routes>
             <Route path="/" element={<Navigate to="/product/1" />} />

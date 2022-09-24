@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ProductCarousel from './ProductCarousel';
 import ProductDescription from './ProductDescription';
 import SimilarProducts from './SimilarProducts';
-import Cart from './Cart';
 
 export default class ProductDetails extends Component {
   constructor(props) {
@@ -19,18 +18,11 @@ export default class ProductDetails extends Component {
     const similarProduct = modifiedData.filter((_product, idx) => idx + 1 !== parseInt(window.location.href.split('/').pop(), 10));
     return (
       <>
-        <div className="d-flex justify-content-center product container my-5">
-          <div className="w-50">
-            <ProductCarousel data={selectedProduct} />
-          </div>
-          <div className="">
-            <ProductDescription data={selectedProduct} />
-          </div>
+        <div className="d-flex flex-column flex-lg-row justify-content-center product container my-5">
+          <ProductCarousel data={selectedProduct} />
+          <ProductDescription data={selectedProduct} />
         </div>
         <SimilarProducts data={similarProduct} />
-        <Cart>
-          Hello
-        </Cart>
       </>
     );
   }

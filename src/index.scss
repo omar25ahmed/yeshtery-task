@@ -3,3 +3,9 @@
   --primary-color: #fff200;
   --secondary-color: #542e90;
 }
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
